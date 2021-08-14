@@ -17,7 +17,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField "String", 'BASE_URL', "\"https://api.boerse-go.de\""
+        }
         release {
+            buildConfigField "String", 'BASE_URL', "\"https://api.boerse-go.de\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
