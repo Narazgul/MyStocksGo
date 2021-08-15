@@ -6,4 +6,6 @@ data class Instrument(
     val exchangeName: String,
     val quoteValue: String,
     val unitName: String
-)
+) {
+    val quoteWithUnitString = "$quoteValue $unitName"
+}

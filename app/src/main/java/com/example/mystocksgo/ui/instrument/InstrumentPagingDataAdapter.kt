@@ -24,9 +24,7 @@ class InstrumentPagingDataAdapter :
 
     override fun onBindViewHolder(holder: InstrumentViewHolder, position: Int) {
         val currentItem = getItem(position)
-        currentItem?.let {
-            holder.bind(currentItem)
-        }
+        currentItem?.let { holder.bind(currentItem) }
     }
 
     companion object {
@@ -46,13 +44,8 @@ class InstrumentPagingDataAdapter :
             binding.apply {
                 instrument.text = currentInstrument.name
                 exchange.text = currentInstrument.exchangeName
-                quote.text = createQuoteString(
-                    value = currentInstrument.quoteValue,
-                    unit = currentInstrument.unitName
-                )
+                quote.text = currentInstrument.quoteWithUnitString
             }
         }
-
-        private fun createQuoteString(value: String, unit: String) = "$value $unit"
     }
 }
