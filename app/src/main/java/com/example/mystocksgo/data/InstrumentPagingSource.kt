@@ -35,7 +35,7 @@ class InstrumentPagingSource(
                 locale = locale
             )
             val instrumentsDto = response.data
-            val instruments = instrumentsDto.mapToInstruments()
+            val instruments = instrumentsDto.mapToInstrumentsDomainModel()
 
             return LoadResult.Page(
                 data = instruments,
@@ -57,7 +57,7 @@ class InstrumentPagingSource(
     }
 
 
-    private fun List<InstrumentDto>.mapToInstruments(): List<Instrument> {
+    private fun List<InstrumentDto>.mapToInstrumentsDomainModel(): List<Instrument> {
         return this.map {
 
             val quoteValueString = getQuoteValueOrEmptyString(it)
