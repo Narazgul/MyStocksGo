@@ -9,16 +9,11 @@ import com.example.mystocksgo.databinding.InstrumentItemBinding
 import com.example.mystocksgo.domain.Instrument
 
 class InstrumentPagingDataAdapter :
-    PagingDataAdapter<Instrument, InstrumentPagingDataAdapter.InstrumentViewHolder>(
-        INSTRUMENT_COMPARATOR
-    ) {
+    PagingDataAdapter<Instrument,
+            InstrumentPagingDataAdapter.InstrumentViewHolder>(INSTRUMENT_COMPARATOR) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): InstrumentViewHolder {
-        val binding = InstrumentItemBinding.inflate(
-            LayoutInflater.from(parent.context),
-            parent,
-            false
-        )
+        val binding = InstrumentItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return InstrumentViewHolder(binding)
     }
 

@@ -34,6 +34,7 @@ class InstrumentPagingSource(
                 clientId = CLIENT_ID,
                 locale = locale
             )
+
             val instrumentsDto = response.data
             val instruments = instrumentsDto.mapToInstrumentsDomainModel()
 
