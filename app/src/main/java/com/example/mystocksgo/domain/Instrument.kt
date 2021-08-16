@@ -7,5 +7,5 @@ data class Instrument(
     val quoteValue: String,
     val unitName: String
 ) {
-    val quoteWithUnitString = "$quoteValue $unitName"
+    val quoteWithUnitString = "${quoteValue.trim()} ${unitName.trim()}"
 }

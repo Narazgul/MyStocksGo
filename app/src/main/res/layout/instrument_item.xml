@@ -43,6 +43,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/exchange"
-        tools:text="200,41 Pkt." />
+        tools:text="200,41 Pkt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
