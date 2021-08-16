@@ -1,4 +1,4 @@
-package com.example.mystocksgo.ui.instrument
+package com.example.mystocksgo.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

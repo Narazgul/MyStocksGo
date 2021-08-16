@@ -1,4 +1,4 @@
-package com.example.mystocksgo.ui.instrument
+package com.example.mystocksgo.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

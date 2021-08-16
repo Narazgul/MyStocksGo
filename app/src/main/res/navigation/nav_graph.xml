@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/instrumentsFragment"
-        android:name="com.example.mystocksgo.ui.instrument.InstrumentFragment"
+        android:name="com.example.mystocksgo.ui.InstrumentFragment"
         android:label="fragment_instruments"
         tools:layout="@layout/fragment_instrument" />
 </navigation>
